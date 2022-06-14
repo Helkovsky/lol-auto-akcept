@@ -1,7 +1,7 @@
 import pyautogui
 import time
 import os
-tab = ["/", "—", "\\", "|", "—"]
+tab = ["/", "—", "\\", "|"]
 i = 0
 
 while True:
