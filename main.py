@@ -18,5 +18,3 @@ while True:
     time.sleep(5)
 
 print(pyautogui.locateOnScreen("img.png"))
-
-input()
