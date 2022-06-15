@@ -28,7 +28,7 @@ label = customtkinter.CTkLabel(master=app)
 label.configure(text="Wyszukiwanie gry off")
 
 switch_var = tkinter.StringVar()
-switch_1 = customtkinter.CTkSwitch(master=app, text="Auto Akcpet", variable=switch_var, onvalue=True,
+switch_1 = customtkinter.CTkSwitch(master=app, text="Auto Akcept", variable=switch_var, onvalue=True,
                                    offvalue=False)
 
 label.place(relx=0.5, rely=0.4, anchor=tkinter.CENTER)
@@ -44,8 +44,8 @@ def check():
         index = index + 1
         if index == 4:
             index = 0
-        if not pyautogui.locateOnScreen("img1.png") is None:
-            pyautogui.click("img1.png")
+        if not pyautogui.locateOnScreen(resource_path("img1.png")) is None:
+            pyautogui.click(resource_path("img1.png"))
             label.configure(text="Znaleziono mecz!")
             app.after(10000, check)
         else:
